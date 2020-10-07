@@ -1,5 +1,9 @@
 class VoxMachine
-  def initialize
-    puts "Hello, World!"
+  def initialize(message:)
+    @message = message
+  end
+  
+  def shout
+    puts @message
   end
 end
