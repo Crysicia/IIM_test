@@ -4,10 +4,14 @@ class VoxMachine
   end
   
   def shout
-    puts @message.upacse
+    puts @message.upcase
   end
   
   def whisper
     puts "psss #{@message.downcase}"
+  end
+  
+  def rephrase(message)
+    @message = message
   end
 end
