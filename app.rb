@@ -22,7 +22,9 @@ class Character
     @klass = klass
   end
 
-  def greets
-    puts "Hi, my name is #{name}"
+  def greets(state)
+    vox = VoxMachine.new("Hi, my name is #{name}")
+    VoxMachine.shout if state == 'shout'
+    VoxMachine.whisper if state == 'whisper'
   end
 end
