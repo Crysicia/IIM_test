@@ -17,8 +17,12 @@ class VoxMachine
 end
 
 class Character
-  def initialize
-    @name = "Pedro"
-    @klass = "Healer"
+  def initialize(name, klass)
+    @name = name
+    @klass = klass
+  end
+
+  def greets
+    puts "Hi, my name is #{name}"
   end
 end
